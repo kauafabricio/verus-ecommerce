@@ -10,9 +10,9 @@ Este projeto é uma landing page elegante para uma loja de roupas fictícia que 
 
 ## Tecnologias Utilizadas
 
-**Next.js**: Framework do React para Front-end.
-**Typescript**: Super set do JavaScript.
-**Tailwind CSS**: Framework do CSS.
+**Next.js**: Framework do React para Front-end.    
+**Typescript**: Super set do JavaScript.    
+**Tailwind CSS**: Framework do CSS.    
 
 ## Estrutura de pastas
 
