@@ -1,4 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+
+// IMPORT IMAGES
+
+import modelhead1 from "../public/imgs/model-head-1.jpg"
+import modelhead2 from "../public/imgs/model-head-2.jpg"
+import jacket1 from "../public/imgs/jacket-1.jpg"
+import jacket2 from "../public/imgs/jacket-2.jpg"
+import jacket3 from "../public/imgs/jacket-3.jpg"
+import threeSection1 from "../public/imgs/three-section-1.png"
+import threeSection2 from "../public/imgs/three-section-2.jpg"
+import newCollections1 from "../public/imgs/new-collections-1.jpg"
+import newCollections2 from "../public/imgs/new-collections-2.jpg"
+import newCollections3 from "../public/imgs/new-collections-3.jpg"
+import newsletter from "../public/imgs/newsletter-woman.jpg"
+
 
 // COMPONENTS
 import NavBar from "../src/app/components/NavBar";
@@ -78,11 +94,14 @@ const Home = () => {
             <div className="flex flex-col items-center h-full justify-between model-head-1-container">
 
               <div className="model-head-1">
+                <Image src={modelhead1} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
               </div>
               <p className="text-[#A6A6A6] font-poppins-md leading-5 mt-3">Descubra uma nova maneira de se expressar através da moda com a Verus. Nossas peças são desenhadas para liberar sua criatividade e individualidade, combinando sofisticação e liberdade.</p>
 
             </div>
-            <div className="model-head-2"></div>
+            <div className="model-head-2">
+              <Image src={modelhead2} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
+            </div>
           </div>
         </div>
       </section>
@@ -148,14 +167,17 @@ const Home = () => {
         <div className="w-fit h-auto flex justify-center gap-5 mt-[5rem] relative z-2 flex-col sm:flex-row sm:flex-wrap">
 
           <div className="new-in-container jacket-1">
+             <Image src={jacket1} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
             <p className="font-poppins-md text-[#EFEEE5]">Trench Coat</p>
             <p className="font-poppins-md text-[#3b2a2a] text-[14px]">R$ 459,90</p>
           </div>
           <div className="new-in-container jacket-2">
+            <Image src={jacket2} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
             <p className="font-poppins-md text-[#EFEEE5]">Jaqueta</p>
             <p className="font-poppins-md text-[#a6a6a6] text-[14px]">R$ 299,90</p>
           </div>
           <div className="new-in-container jacket-3">
+            <Image src={jacket3} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
             <p className="font-poppins-md text-[#EFEEE5]">Terno</p>
             <p className="font-poppins-md text-[#a6a6a6] text-[14px]">R$ 359,90</p>
           </div>
@@ -189,10 +211,13 @@ const Home = () => {
           <div className="w-full h-auto flex flex-col gap-3 relative z-2 sm:flex-row">
             {/* THREE SECTION - IMAGES */}
             <div className="three-section-1">
+              <Image src={threeSection1} alt="Modelo com a roupa da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
             </div>
 
             <div className="three-section-container-img">
-              <div className="three-section-2"></div>
+              <div className="three-section-2">
+                <Image src={threeSection2} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
+              </div>
 
               <p className="font-poppins-md text-[#a6a6a6]">Com cortes modernos e tecidos de alta qualidade, você pode explorar sua individualidade e criar um guarda-roupa que celebra sua autenticidade.</p>
               
@@ -228,17 +253,19 @@ const Home = () => {
           {/* COLEÇÕES EM DESTAQUE - IMAGENS */}
           <div className="relative z-3 flex flex-col gap-3 h-auto w-full mt-[4rem] items-center sm:flex-row lg:w-fit">
             <picture className="new-collections-1">
-
+              <Image src={newCollections1} alt="Modelo com a Jaqueta da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
             </picture>
 
             <div className="flex flex-col justify-between">
 
               <picture className="new-in-container new-collections-image-2">
+                <Image src={newCollections2} alt="Blazer Alongado Berge da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
                 <p className="font-poppins-md text-[#EFEEE5]">Blazer Alongado Berge</p>
                 <p className="font-poppins-md text-[#a6a6a6] text-[14px]">R$ 359,90</p>
               </picture>
 
               <picture className="new-in-container new-collections-image-3">
+                <Image src={newCollections3} alt="Blazer Vermelho com Abotoamento da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
                 <p className="font-poppins-md text-[#EFEEE5]">Blazer Vermelho com Abotoamento</p>
                 <p className="font-poppins-md text-[#a6a6a6] text-[14px]">R$ 359,90</p>
               </picture>
@@ -270,6 +297,7 @@ const Home = () => {
           <div className="absolute z-2 w-full h-[200%] top-0 opacity-20 blur-3xl bg-slate-950 rounded-full">
           </div>
           <picture className="newsletter-image relative z-4">
+            <Image src={newsletter} alt="Foto de Modelo com a roupa da Verus" className="opacity-0 w-full h-full" loading="lazy"/>
           </picture>
 
           <div className="flex flex-col gap-3 items-center justify-center w-fit relative z-4">
