@@ -150,7 +150,7 @@ const Home = () => {
 
           <div aria-label="Modelo vestida de Trench Coat Berge da Verus" className="new-in-container jacket-1">
             <p className="font-poppins-md text-[#EFEEE5]">Trench Coat</p>
-            <p className="font-poppins-md text-[#3b2a2a] text-[14px]">R$ 459,90</p>
+            <p className="font-poppins-md text-[#a6a6a6] text-[14px]">R$ 459,90</p>
           </div>
           <div aria-label="Modelo vestido com a Jaqueta Preta da Verus" className="new-in-container jacket-2">
             <p className="font-poppins-md text-[#EFEEE5]">Jaqueta</p>
